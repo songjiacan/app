@@ -60,11 +60,13 @@ class SecurityConfig : WebSecurityConfigurerAdapter() {
                 "/**/*.js",
                 "/swagger-resources/**",
                 "/v2/api-docs/**",
+                "/hello",
                 "/admin"
             )
             .permitAll()
             .antMatchers(
                 "/admin/login",
+                "/hello/api",
                 "/admin/register",
                 "/api/todo/**",
                 "/h2-console/**"
